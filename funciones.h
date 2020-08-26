@@ -1,3 +1,7 @@
+/*
+Daniel Cruz Arciniega
+A01701370
+*/
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
