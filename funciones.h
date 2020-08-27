@@ -1,7 +1,3 @@
-/*
-Daniel Cruz Arciniega
-A01701370
-*/
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
@@ -10,9 +6,9 @@ A01701370
 class Funciones {
 public:
     Funciones(){};
-    sumaIterativa(int n);
-    sumaRecursiva(int n);
-    sumaDirecta(int n);
+    int sumaIterativa(int n);
+    int sumaRecursiva(int n);
+    int sumaDirecta(int n);
 };
 
 int Funciones::sumaIterativa(int n){ //O(n)
@@ -24,17 +20,16 @@ int Funciones::sumaIterativa(int n){ //O(n)
 }
 
 int Funciones::sumaRecursiva(int n) { //O(n)
-    if(n<=1){
-        return 1;
+    if(n<1){
+        return 0;
     }
     else{
-        return n+sumaRecursiva(n-1);
+      return n+sumaRecursiva(n-1);
     }
-
 }
 
 int Funciones::sumaDirecta(int n){ //O(1)
-    return (1/2*n*(n+1));
+    return (n+1)*n/2;
 }
 
 #endif // FUNCIONES_H_
